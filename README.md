@@ -464,6 +464,7 @@ c2desf/
 🚀 Встановлення та Використання (Концептуально)
 Детальні інструкції будуть надані з першими релізами.
 Загальний підхід до встановлення c2desf:
+```
  * Клонування репозиторію:
    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
 cd c2desf
@@ -481,7 +482,7 @@ poetry install
 # pip install .
 
  * Збірка C/C++ компонентів (бекенд - VM та Cython bindings):
-```
+
    # Якщо використовується CMake
 mkdir build && cd build
 cmake ..
@@ -489,9 +490,9 @@ make
 cd ..
 
 # Або через setup_bindings.py для Cython розширень
-```
+
 python setup_bindings.py build_ext --inplace
-```
+
 Використання утиліти c2desf:
 # Базовий синтаксис (концептуально)
 c2desf input.c -o output.desf [OPTIONS]
